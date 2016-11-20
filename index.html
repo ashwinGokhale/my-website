@@ -1,12 +1,19 @@
+
+
 <!-- index.html -->
     <!DOCTYPE html>
     <html ng-app='portfolioApp'>
     <head>
+        <style>
+            h3 {
+                text-decoration: underline;
+                margin-bottom: 10px;
+            }
+        </style>
       <title>Ashwin Gokhale's Website</title>
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 
     <!-- //for-mobile-apps -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -15,11 +22,6 @@
     <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <!-- //js -->
-
-    <!-- fonts -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'><!-- //fonts -->
-
 
         <!-- CSS
       ================================================== -->
@@ -80,7 +82,7 @@
     <!-- Me Section
     ==================================== -->
 
-    <section ng-show = "true" id="features" class="features">
+    <section id="features" class="features">
       <div class="container">
         <div class="row">
 
@@ -98,7 +100,7 @@
 
               <div class="service-desc" style="width: 340px">
                 <h3>Education</h3>
-                <h4 style="width: 320px"><strong>Purdue University, West Lafayette, IN</strong></h4>
+                <h4 style="width: 320px; text-decoration: underline"><strong>Purdue University, West Lafayette, IN</strong></h4>
                 <ul style="list-style-type: disc; font-size: 15.5px"><li style="margin-left: 40px">  B.S. in Computer Science  May 2020</li></ul>
               </div>
             </div>
@@ -114,11 +116,11 @@
 
               <div class="service-desc"  >
                 <h3  style="margin-left: 10px">Extracurriculars</h3>
-                <ul style="list-style-type: disc; margin-left: 30px; font-size: 16px">
-                  <li>Purdue Hackers</li>
-                  <li>ACM: SigApp</li>
-                  <li>iOS Dev Club</li>
-                  <li>Web Dev Club</li>
+                <ul style="list-style-type: disc; margin-left: 30px; font-size: 16px; margin-bottom: 10px">
+                  <li style="margin-bottom: 5px">Purdue Hackers</li>
+                  <li style="margin-bottom: 5px">ACM: SigApp</li>
+                  <li style="margin-bottom: 5px">iOS Dev Club</li>
+                  <li style="margin-bottom: 5px">Web Dev Club</li>
                 </ul>
               </div>
             </div>
@@ -132,9 +134,15 @@
                 <i class="fa fa-github fa-2x"></i>
               </div>
 
-              <div class="service-desc">
+              <div class="service-desc" style="margin-right: -20px">
                 <h3>Projects</h3>
-                <a href="https://www.github.com/ashwinGokhale/AudibleTabs" target="_blank" style="color: #6a737b;text-decoration:underline;font-size: 16px">Audible Tabs</a>
+                  <h4 style="width: 320px"><strong><a href="https://www.github.com/ashwinGokhale/AudibleTabs" target="_blank" style="color: #6a737b;text-decoration:underline;font-size: 16px">Audible Tabs</a></strong></h4>
+                  <ul style="list-style-type: disc; font-size: 15.5px"><li style="margin-left: 40px">Chrome Extension that adds a UI for managing audible tabs</li></ul>
+                  <h4 style="width: 320px; margin-top: 20px"><strong><a href="https://github.com/ashwinGokhale/cal-hacks-3.0-Cash-In" target="_blank" style="color: #6a737b;text-decoration:underline;font-size: 16px">Cash In</a></strong></h4>
+                  <ul style="list-style-type: disc; font-size: 15.5px"><li style="margin-left: 40px; margin-bottom: 5px">Won Square API Prize at Cal Hacks 3.0</li></ul>
+                  <ul style="list-style-type: disc; font-size: 15.5px"><li style="margin-left: 40px">Web application that uses Square's API to quickly charge someone a predetermined amount of money.</li></ul>
+
+
               </div>
             </div>
           </div>
