@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app='portfolioApp'>
+    <head>
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+
+      <!-- CSS
+    ================================================== -->
+    <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+    <!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+
+    </head>
+
+
+    <!-- Fixed Navigation ==================================== -->
+        <header id="navigation" ng-show = "true" class="navbar-fixed-top navbar" style="background-color: #424141">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+          <!-- /responsive nav button -->
+          
+          <!-- logo -->
+                    <a class="navbar-brand" href="#body">
+            <h1 id="logo">
+              <!-- <img src="img/image.png" alt="NameHere"> -->
+            </h1>
+          </a>
+          <!-- /logo -->
+                </div>
+
+        <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li><a href="Ashwin_Gokhale_Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="https://www.github.com/ashwinGokhale" target="_blank">Projects</a></li>
+                    </ul>
+                </nav>
+        <!-- /main nav -->
+        
+            </div>
+        </header>
+        <!-- End Fixed Navigation ==================================== -->
+
+
+    <body ng-controller="Portfolio">
+    	<section ng-show = "true" id="features" class="features">
+      <div class="container">
+        <div class="row">
+        
+          <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+            <h2><br></br>About ME</h2>
+            <div class="devider"><i class="fa fa-lg"></i></div>
+          </div>
+          
+          <!-- me section -->
+          <div class="service-desc">
+          	<center><p style="font-size: 20px">I am freshman at Purdue University studying Computer Science. I have been playing around with web development (HTML, CSS, and Javascript), but I mainly program in Java and Python.</p></center>
+          </div>
+          <!-- end me section -->
+            
+        </div>
+      </div>
+    </section>
+    </body>
+</html>
