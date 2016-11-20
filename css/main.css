@@ -76,7 +76,11 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
+<<<<<<< HEAD
   color: steelblue;
+=======
+  color: #0eb493;
+>>>>>>> 94a604f69850c441d86447737b00c56ffcea86b6
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -302,9 +306,15 @@ top: -8px;
 }
 
 .service-icon {
+<<<<<<< HEAD
   border: 1px solid steelblue;
   border-radius: 50%;
   color: steelblue;
+=======
+  border: 1px solid #0eb493;
+  border-radius: 50%;
+  color: #0eb493;
+>>>>>>> 94a604f69850c441d86447737b00c56ffcea86b6
   float: left;
   padding: 10px 13px;
 }
@@ -316,7 +326,11 @@ top: -8px;
 }
 
 .service-desc h3 {
+<<<<<<< HEAD
   color: #424141;
+=======
+  color: #062033;
+>>>>>>> 94a604f69850c441d86447737b00c56ffcea86b6
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
