@@ -1,4 +1,5 @@
 \documentclass[letterpaper, 10pt]{article}
+    \usepackage{bookmark}
     \usepackage{amsmath}
     \usepackage{amssymb}
     \usepackage{textcomp}
@@ -10,11 +11,12 @@
     \usepackage{titlesec}
     \usepackage{verbatim}
     \usepackage{enumitem}
-    \usepackage[pdftex]{hyperref}
+    \usepackage{hyperref}
     \usepackage[papersize={8.5in,11in},bottom=0em,top=0em,left=0.75in,right=0.5in]{geometry}
-    % \usepackage{mathptmx}
+    \usepackage{anyfontsize}
+    % \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault} 
 
-% \textheight=12in
 \raggedright
 
 \hypersetup{
@@ -48,14 +50,14 @@
     \begin{center}
         {\Huge \scshape {#1}}
         \vspace*{5pt}
-        \\ #2
+        \\ 
+        #2
     \end{center}
     \vspace*{-10pt}
 }
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-% \fontfamily{lmr}
 \fontfamily{qtm}
 \vspace*{20pt}
 % \vspace*{-40pt}
@@ -65,22 +67,26 @@
 
 \vspace*{-10pt}
 \contact{Ashwin Gokhale}{
+    {\fontsize{11}{11}\selectfont
 	\href{mailto:ashwin.gokhale98@gmail.com}{ashwin.gokhale98@gmail.com} |
 	$\cdot$ | (925)-548-6767 | $\cdot$ |
 	\textbf{GitHub:}
-	\href{https://goo.gl/R79aeK}{ashwinGokhale}
+    \href{https://goo.gl/R79aeK}{ashwinGokhale}
+    }
 }
 
 %==== Education ====%
 \vspace{10pt}
 
 \header{Education}
-\textbf{Purdue University} -- West Lafayette, IN
-\hfill August 2016 - December 2019\\
+\textbf{Purdue University} 
+\hfill West Lafayette, IN\\
 (B.S.) Computer Science -- \textit{GPA: 3.79}
+\hfill August 2016 - December 2019
 \\
 
-\textbf{Relevant Courses:} Data Structures \& Algorithms, Systems Programming, Web Applications
+\textit{Relevant Courses: Data Structures \& Algorithms, Systems Programming, Operating Systems, Web Applications}
+
 \vspace{2mm}
 
 %==== Skills ====%
