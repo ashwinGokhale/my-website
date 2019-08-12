@@ -60,3 +60,5 @@ export const UpDownWide = styled.div`
 export const waveAnimation = (length: string) => css`
     animation: ${wave} ${length} linear infinite alternate;
 `;
+
+export const hidden = [`none`, `none`, `block`];

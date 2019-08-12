@@ -2,11 +2,11 @@
 import { jsx, Styled } from 'theme-ui';
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Divider from '../elements/divider';
-import Inner from '../elements/inner';
-import Content from '../elements/content';
-import SVG from './svg';
-import { UpDown, UpDownWide, waveAnimation } from '../styles/animations';
+import Divider from '../components/divider';
+import Inner from '../components/inner';
+import Content from '../components/content';
+import SVG from '../components/svg';
+import { UpDown, UpDownWide, waveAnimation } from '../components/animations';
 import Footer from './footer';
 
 const InnerWave = styled.div`
@@ -54,8 +54,8 @@ const Contact = ({ offset }: { offset: number }) => (
         <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
             <Inner>
                 <Styled.h2>Get in touch</Styled.h2>
-                <Styled.a href="https://github.com/ashwinGokhale" target="_blank">
-                    {' '}
+                <Styled.a href="https://github.com/ashwinGokhale" target="_blank" rel="noreferrer">
+                    {` `}
                     <button
                         sx={{
                             variant: `buttons.contact`,
@@ -83,6 +83,23 @@ const Contact = ({ offset }: { offset: number }) => (
                         aria-label="Email Link"
                     >
                         <FontAwesomeIcon sx={{ marginRight: '3px' }} icon="envelope" /> Email
+                    </button>
+                </Styled.a>
+                <Styled.a href="https://www.linkedin.com/in/ashwin-gokhale" target="_blank">
+                    {' '}
+                    <button
+                        sx={{
+                            variant: `buttons.contact`,
+                            backgroundColor: '#0077B5',
+                            color: 'icon_brightest',
+                            fontWeight: `semibold`,
+                            display: `inline-block`
+                        }}
+                        type="button"
+                        aria-label="Linkedin Link"
+                    >
+                        <FontAwesomeIcon sx={{ marginRight: '3px' }} icon={['fab', 'linkedin']} />{' '}
+                        Linkedin
                     </button>
                 </Styled.a>
                 <Styled.a href="/Ashwin_Gokhale_Resume.pdf" target="_blank">
@@ -120,14 +137,7 @@ const Contact = ({ offset }: { offset: number }) => (
                     top="50%"
                 />
                 <SVG icon="circle" width={6} color="icon_brightest" left="85%" top="15%" />
-                <SVG
-                    icon="upDown"
-                    hiddenMobile
-                    width={8}
-                    color="icon_yellow"
-                    left="45%"
-                    top="10%"
-                />
+                <SVG icon="hexa" stroke width={8} color="icon_yellow" left="50%" top="40%" />
                 <SVG icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
                 <SVG icon="cross" width={8} stroke color="icon_purple" left="10%" top="70%" />
             </UpDownWide>

@@ -19,20 +19,20 @@ type Props = {
 const SEO = ({ children }: Props) => {
     const site = useSiteMetadata();
 
-    const { title, url, description, language, author } = site;
+    const { title, siteUrl, description, language, author } = site;
 
     return (
         <Helmet title={title}>
             <html lang={language} />
             <meta name="description" content={description} />
             <meta property="og:title" content={title} />
-            <meta property="og:url" content={url} />
+            <meta property="og:url" content={siteUrl} />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="website" />
             <meta property="og:image:alt" content={description} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
-            <meta name="twitter:url" content={url} />
+            <meta name="twitter:url" content={siteUrl} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image:alt" content={description} />
             <meta name="twitter:creator" content={author} />

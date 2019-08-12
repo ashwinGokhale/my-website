@@ -4,11 +4,12 @@ import { Global, css } from '@emotion/core';
 import { Styled, jsx } from 'theme-ui';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons/faFileAlt';
 import SEO from './seo';
 
-library.add(faGithub, faEnvelope, faFileAlt);
+library.add(faGithub, faLinkedin, faEnvelope, faFileAlt);
 
 type LayoutProps = { children?: React.ReactNode; className?: string };
 

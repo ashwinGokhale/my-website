@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { hidden } from '../styles/utils';
+import { hidden } from './animations';
 
 const icons = {
     triangle: {

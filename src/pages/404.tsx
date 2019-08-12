@@ -1,14 +1,12 @@
 import React from 'react';
 import { Parallax } from 'react-spring/renderprops-addons';
 import Layout from '../components/layout';
-import Header from '../sections/header';
-import Contact from '../sections/contact';
+import FourOhFour from '../sections/404';
 
 const Index = () => (
     <Layout>
-        <Parallax pages={2}>
-            <Header offset={0} />
-            <Contact offset={1} />
+        <Parallax pages={1}>
+            <FourOhFour offset={0} />
         </Parallax>
     </Layout>
 );

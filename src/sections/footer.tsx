@@ -1,7 +1,5 @@
 /** @jsx jsx */
 import { Footer as ThemeFooter, Styled, Flex, useColorMode, jsx } from 'theme-ui';
-import Inner from '../elements/inner';
-import Content from '../elements/content';
 
 const Footer = () => {
     const [colorMode, setColorMode] = useColorMode();

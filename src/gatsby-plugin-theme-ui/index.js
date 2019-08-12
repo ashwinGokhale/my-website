@@ -27,7 +27,8 @@ export default {
             light: {
                 text: tailwind.colors.gray[8],
                 heading: tailwind.colors.black,
-                primary: tailwind.colors.blue[7],
+                // primary: tailwind.colors.blue[7],
+                primary: tailwind.colors.orange[5],
                 secondary: tailwind.colors.green[7],
                 background: tailwind.colors.gray[1],
                 divider: tailwind.colors.gray[4],

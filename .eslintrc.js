@@ -1,3 +1,6 @@
+/**
+ * @type {import('eslint').}
+ */
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     extends: [
@@ -47,6 +50,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-non-null-assertion': 0,
+        quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
         'no-console': 0,
         'spaced-comment': 0,
         'no-use-before-define': 0,
