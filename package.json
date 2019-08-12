@@ -10,7 +10,7 @@
 		"start": "gatsby serve",
 		"clean": "gatsby clean",
 		"lint": "eslint src/",
-		"deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
+		"deploy": "yarn build && gh-pages -d public -b master"
 	},
 	"peerDependencies": {
 		"gatsby": "^2.13.3",
@@ -44,6 +44,10 @@
 	"dependencies": {
 		"@emotion/core": "^10.0.15",
 		"@emotion/styled": "^10.0.15",
+		"@fortawesome/fontawesome-svg-core": "^1.2.21",
+		"@fortawesome/free-brands-svg-icons": "^5.10.1",
+		"@fortawesome/free-solid-svg-icons": "^5.10.1",
+		"@fortawesome/react-fontawesome": "^0.1.4",
 		"@mdx-js/mdx": "^1.1.5",
 		"@mdx-js/react": "^1.1.5",
 		"@theme-ui/presets": "^0.2.5",
@@ -54,7 +58,6 @@
 		"gatsby-plugin-typescript": "^2.1.2",
 		"gatsby-source-filesystem": "^2.1.8",
 		"react-helmet": "^5.2.1",
-		"react-icons": "^3.7.0",
 		"react-spring": "^8.0.27",
 		"theme-ui": "^0.2.6"
 	},

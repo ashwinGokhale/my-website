@@ -6,12 +6,12 @@ export default {
     useCustomProperties: true,
     colors: {
         ...tailwind.colors,
-        primary: tailwind.colors.orange[4],
+        primary: tailwind.colors.pink[5],
         secondary: tailwind.colors.indigo[6],
         text: tailwind.colors.gray[3],
         heading: tailwind.colors.white,
         background: `#141821`,
-        divider: tailwind.colors.gray[8],
+        divider: tailwind.colors.gray[7],
         textMuted: tailwind.colors.gray[5],
         icon_brightest: tailwind.colors.white,
         icon_darker: tailwind.colors.gray[7],
@@ -27,9 +27,10 @@ export default {
             light: {
                 text: tailwind.colors.gray[8],
                 heading: tailwind.colors.black,
-                primary: tailwind.colors.orange[7],
+                primary: tailwind.colors.blue[7],
+                secondary: tailwind.colors.green[7],
                 background: tailwind.colors.gray[1],
-                divider: tailwind.colors.gray[2],
+                divider: tailwind.colors.gray[4],
                 textMuted: tailwind.colors.gray[6],
                 icon_brightest: tailwind.colors.gray[2],
                 icon_darker: tailwind.colors.gray[4],
@@ -101,7 +102,8 @@ export default {
             lineHeight: `body`,
             '--baseline-multiplier': 0.179,
             '--x-height-multiplier': 0.35,
-            color: `text`
+            color: `text`,
+            fontWeight: `medium`
         },
         blockquote: {
             marginLeft: 0,
@@ -152,6 +154,7 @@ export default {
     buttons: {
         toggle: {
             color: `background`,
+            borderRadius: '4px',
             border: `none`,
             backgroundColor: `text`,
             cursor: `pointer`,
@@ -162,13 +165,17 @@ export default {
         },
         contact: {
             color: `background`,
-            border: `none`,
             backgroundColor: `text`,
+            borderRadius: '4px',
+            border: `none`,
             cursor: `pointer`,
             alignSelf: `center`,
-            px: 3,
-            py: 2,
-            ml: 3
+            px: 14,
+            py: 18,
+            fontSize: '1.2rem',
+            mr: '10px',
+            mb: '10px',
+            mt: '10px'
         }
     },
     texts: {

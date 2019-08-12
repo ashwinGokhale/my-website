@@ -1,8 +1,14 @@
 /** @jsx jsx */
 import React from 'react';
-import { Global } from '@emotion/core';
-import { css, Styled, jsx } from 'theme-ui';
+import { Global, css } from '@emotion/core';
+import { Styled, jsx } from 'theme-ui';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons/faFileAlt';
 import SEO from './seo';
+
+library.add(faGithub, faEnvelope, faFileAlt);
 
 type LayoutProps = { children?: React.ReactNode; className?: string };
 

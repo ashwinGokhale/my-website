@@ -5,7 +5,6 @@ import useSiteMetadata from '../hooks/use-site-metadata';
 const defaultProps = {
     title: ``,
     description: false,
-    pathname: false,
     image: false,
     children: null
 };
@@ -13,12 +12,11 @@ const defaultProps = {
 type Props = {
     title?: string;
     description?: string;
-    pathname?: string;
     image?: string;
     children?: React.ReactNode;
 };
 
-const SEO = ({ pathname, children }: Props) => {
+const SEO = ({ children }: Props) => {
     const site = useSiteMetadata();
 
     const { title, url, description, language, author } = site;
