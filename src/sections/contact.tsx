@@ -9,9 +9,29 @@ import SVG from '../components/svg';
 import { UpDown, UpDownWide, waveAnimation } from '../components/animations';
 import Footer from './footer';
 
+export const ContactShapes = () => (
+    <div>
+        <UpDown>
+            <SVG icon="upDown" hiddenMobile width={8} color="icon_blue" left="70%" top="20%" />
+            <SVG icon="triangle" width={8} stroke color="icon_pink" left="25%" top="5%" />
+            <SVG icon="box" width={12} color="icon_green" left="20%" top="30%" />
+        </UpDown>
+        <UpDownWide>
+            <SVG icon="triangle" width={12} stroke color="icon_brightest" left="95%" top="50%" />
+            <SVG icon="circle" width={6} color="icon_brightest" left="85%" top="15%" />
+            <SVG icon="hexa" stroke width={8} color="icon_yellow" left="50%" top="40%" />
+            <SVG icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
+            <SVG icon="cross" width={8} stroke color="icon_purple" left="10%" top="70%" />
+        </UpDownWide>
+        <SVG icon="hexa" width={8} stroke color="icon_orange" left="80%" top="70%" />
+        <SVG icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
+        <SVG icon="hexa" width={8} stroke color="icon_orange" left="80%" top="70%" />
+    </div>
+);
+
 const InnerWave = styled.div`
     path {
-        ${waveAnimation(`20s`)};
+        ${waveAnimation(`15s`)};
     }
 `;
 
@@ -85,7 +105,11 @@ const Contact = ({ offset }: { offset: number }) => (
                         <FontAwesomeIcon sx={{ marginRight: '3px' }} icon="envelope" /> Email
                     </button>
                 </Styled.a>
-                <Styled.a href="https://www.linkedin.com/in/ashwin-gokhale" target="_blank">
+                <Styled.a
+                    href="https://www.linkedin.com/in/ashwin-gokhale"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     {' '}
                     <button
                         sx={{
@@ -122,28 +146,7 @@ const Contact = ({ offset }: { offset: number }) => (
             <Footer />
         </Content>
         <Divider speed={0.1} offset={offset}>
-            <UpDown>
-                <SVG icon="upDown" hiddenMobile width={8} color="icon_blue" left="70%" top="20%" />
-                <SVG icon="triangle" width={8} stroke color="icon_pink" left="25%" top="5%" />
-                <SVG icon="box" width={12} color="icon_green" left="20%" top="30%" />
-            </UpDown>
-            <UpDownWide>
-                <SVG
-                    icon="triangle"
-                    width={12}
-                    stroke
-                    color="icon_brightest"
-                    left="95%"
-                    top="50%"
-                />
-                <SVG icon="circle" width={6} color="icon_brightest" left="85%" top="15%" />
-                <SVG icon="hexa" stroke width={8} color="icon_yellow" left="50%" top="40%" />
-                <SVG icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
-                <SVG icon="cross" width={8} stroke color="icon_purple" left="10%" top="70%" />
-            </UpDownWide>
-            <SVG icon="hexa" width={8} stroke color="icon_orange" left="80%" top="70%" />
-            <SVG icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
-            <SVG icon="hexa" width={8} stroke color="icon_orange" left="80%" top="70%" />
+            <ContactShapes />
         </Divider>
     </div>
 );
