@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ashwingokhale.me/sitemap.xml
+Host: https://www.ashwingokhale.me
