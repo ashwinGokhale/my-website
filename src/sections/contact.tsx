@@ -2,6 +2,7 @@
 import { jsx, Styled } from 'theme-ui';
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Divider from '../components/divider';
 import Inner from '../components/inner';
 import Content from '../components/content';
@@ -14,7 +15,7 @@ export const ContactShapes = () => (
         <UpDown>
             <SVG icon="upDown" hiddenMobile width={8} color="icon_blue" left="70%" top="20%" />
             <SVG icon="triangle" width={8} stroke color="icon_pink" left="25%" top="5%" />
-            <SVG icon="box" width={12} color="icon_green" left="20%" top="30%" />
+            <SVG icon="box" width={12} color="icon_green" left="15%" top="30%" />
         </UpDown>
         <UpDownWide>
             <SVG icon="triangle" width={12} stroke color="icon_brightest" left="95%" top="50%" />
@@ -74,7 +75,12 @@ const Contact = ({ offset }: { offset: number }) => (
         <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
             <Inner>
                 <Styled.h2>Get in touch</Styled.h2>
-                <Styled.a href="https://github.com/ashwinGokhale" target="_blank" rel="noreferrer">
+                <Styled.a
+                    as={OutboundLink}
+                    href="https://github.com/ashwinGokhale"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {` `}
                     <button
                         sx={{
@@ -89,7 +95,12 @@ const Contact = ({ offset }: { offset: number }) => (
                         Github
                     </button>
                 </Styled.a>
-                <Styled.a href="mailto:ashwingokhale98@gmail.com" target="_blank">
+                <Styled.a
+                    as={OutboundLink}
+                    href="mailto:ashwingokhale98@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {' '}
                     <button
                         sx={{
@@ -106,9 +117,10 @@ const Contact = ({ offset }: { offset: number }) => (
                     </button>
                 </Styled.a>
                 <Styled.a
+                    as={OutboundLink}
                     href="https://www.linkedin.com/in/ashwin-gokhale"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                 >
                     {' '}
                     <button
@@ -126,7 +138,12 @@ const Contact = ({ offset }: { offset: number }) => (
                         Linkedin
                     </button>
                 </Styled.a>
-                <Styled.a href="/Ashwin_Gokhale_Resume.pdf" target="_blank">
+                <Styled.a
+                    as={OutboundLink}
+                    href="/Ashwin_Gokhale_Resume.pdf"
+                    target="_blank"
+                    rel="nofollow"
+                >
                     {' '}
                     <button
                         sx={{
