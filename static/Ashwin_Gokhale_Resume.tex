@@ -12,9 +12,12 @@
     \usepackage{verbatim}
     \usepackage{enumitem}
     \usepackage{hyperref}
-    \usepackage[papersize={8.5in,11in},bottom=0em,top=0em,left=0.75in,right=0.5in]{geometry}
+    \usepackage[bottom=0em,top=0em,left=0.75in,right=0.5in]{geometry}
     \usepackage{anyfontsize}
-
+    \usepackage{fontspec}
+    \setmainfont[Scale=1.1]{Helvetica Neue}
+    
+\pagestyle{plain}
 \raggedright
 
 \hypersetup{
@@ -46,7 +49,7 @@
 \newcommand{\contact} [2] {
     \vspace*{-10pt}
     \begin{center}
-        {\Huge \scshape {#1}}
+        {\Huge#1}
         \vspace*{5pt}
         \\ 
         #2
@@ -56,28 +59,25 @@
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\fontfamily{qtm}
+
+
 \vspace*{20pt}
-% \vspace*{-40pt}
-
-
 %==== Profile ====%
 
 \vspace*{-10pt}
-\contact{Ashwin Gokhale}{
-    {\fontsize{11}{11}\selectfont
-	\href{mailto:ashwin.gokhale98@gmail.com}{ashwin.gokhale98@gmail.com} |
-	$\cdot$ | (925)-548-6767 | $\cdot$ |
-	\textbf{GitHub:}
+\contact{Ashwin Gokhale}
+{
+    \href{mailto:ashwin.gokhale98@gmail.com}{ashwin.gokhale98@gmail.com} |
+    $\cdot$ | (925)-548-6767 | $\cdot$ |
+    \textbf{GitHub:}
     \href{https://goo.gl/R79aeK}{ashwinGokhale}
-    }
 }
 
 %==== Education ====%
 \vspace{10pt}
 
 \header{Education}
-\textbf{Purdue University} 
+\textbf{Purdue University}
 \hfill West Lafayette, IN\\
 (B.S.) Computer Science -- \textit{GPA: 3.79}
 \hfill August 2016 - December 2019
@@ -92,8 +92,8 @@
 \header{Skills}
 \vspace{1mm}
 \begin{tabular}{ l l }
-	\textbf{Proficient:} & Javascript, Typescript, HTML, Java, Python, React.js, MongoDB \\
-	\textbf{Basic:}      & CSS, MySQL, Docker, Apache Kafka, GraphQL \\
+    \textbf{Proficient:} & Javascript, Typescript, HTML, Java, Python, React.js, MongoDB \\
+    \textbf{Basic:}      & CSS, MySQL, Docker, Apache Kafka, GraphQL                     \\
 \end{tabular}
 \vspace{2mm}
 
@@ -105,33 +105,33 @@
 \textit{Software Engineer Intern} \hfill May 2019 -- August 2019\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Migrated the rendering of newsletter from 3rd party vendor to a micro frontend container in Typescript, used for dynamically rendering client-side modules on \href{https://www.bloomberg.com}{bloomberg.com}
-	\item Created a microservice using Typescript, Redis, and MySQL to serve compiled HTML, JS, and CSS templates on
-	\href{https://www.bloomberg.com}{bloomberg.com} at scale (75,000 requests/second)
+    \item Migrated the rendering of newsletter from 3rd party vendor to a micro frontend container in Typescript, used for dynamically rendering client-side modules on \href{https://www.bloomberg.com}{bloomberg.com}
+    \item Created a microservice using Typescript, Redis, and MySQL to serve compiled HTML, JS, and CSS templates on
+          \href{https://www.bloomberg.com}{bloomberg.com} at scale (75,000 requests/second)
 \end{itemize}
 
 \textbf{JPMorgan Chase \& Co.} \hfill Chicago, IL\\
 \textit{Software Engineer Intern} \hfill June 2018 -- August 2018\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item SCRUM Master for a team of four interns to manage the design and implementation of testing automation for a corporate banking payment platform
-	\item Architected an extensible automated testing frameworks in Java and Typescript, which prevented hours of manual testing and increased time efficiency for building and deployment
+    \item SCRUM Master for a team of four interns to manage the design and implementation of testing automation for a corporate banking payment platform
+    \item Architected an extensible automated testing frameworks in Java and Typescript, which prevented hours of manual testing and increased time efficiency for building and deployment
 \end{itemize}
 
 \textbf{Purdue University} \hfill West Lafayette, IN\\
-\textit{Teaching Assistant -- Intro To Python Programming} \hfill August 2017 -- December 2017\\
+\textit{Teaching Assistant -- Intro to Python Programming} \hfill August 2017 -- December 2017\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Taught Object-Oriented Python labs, graded assignments, facilitated discussions, and provided feedback to improve students’ programming and problem solving skills
-	\item Improved students’ comprehension levels by holding daily office hours and catering to individuals’ learning styles
+    \item Taught Object-Oriented Python labs, graded assignments, facilitated discussions, and provided feedback to improve students’ programming and problem solving skills
+    \item Improved students’ comprehension levels by holding daily office hours and catering to individuals’ learning styles
 \end{itemize}
 
 \textbf{Object Edge} \hfill Walnut Creek, CA\\
 \textit{Software Engineer Intern} \hfill May 2017 -- August 2017\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Engineered a real-time, customer intent microservice using Java, Apache Kafka, Redis, and Docker at scale (5000 queries/second) to improve product recommendations for customers
-	\item Improved quality of client’s Customer Service Portal by using React JS, Graph QL, and Java to add features and resolve 30\% of bugs in code base
+    \item Engineered a real-time, customer intent microservice using Java, Apache Kafka, Redis, and Docker at scale (5000 queries/second) to improve product recommendations for customers
+    \item Improved quality of client’s Customer Service Portal by using React JS, Graph QL, and Java to add features and resolve 30\% of bugs in code base
 \end{itemize}
 
 %==== Projects ====%
@@ -139,7 +139,7 @@
 {\textbf{Puppeteer-To-Istanbul}} (\href{http://bit.ly/2ZLI0NI}{http://bit.ly/2ZLI0NI}) \hfill February 2019\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Developed and published a Node.js conversion layer for Google Chrome coverage output to Istanbul.js input, which provides complete, automated, test coverage for the browser
+    \item Developed and published a Node.js conversion layer for Google Chrome coverage output to Istanbul.js input, which provides complete, automated, test coverage for the browser
 \end{itemize}
 \vspace*{2mm}
 
@@ -150,7 +150,7 @@
 \textit{User Experience Team}\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Coordinated logistical efforts, managed event scheduling, and mentored students in Web Development for Purdue’s 250+ attendee Beginner-Oriented Hackathon, which incorporates incoming Freshmen into Purdue’s Computer Science community
+    \item Coordinated logistical efforts, managed event scheduling, and mentored students in Web Development for Purdue’s 250+ attendee Beginner-Oriented Hackathon, which incorporates incoming Freshmen into Purdue’s Computer Science community
 \end{itemize}
 
 \textbf{Purdue Hackers} (\href{http://bit.ly/2Knt4zR}{http://bit.ly/2Knt4zR})
@@ -158,7 +158,7 @@
 \textit{Web Master}\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Managed the development, deployment, and maintenance of the main portal for 1500+ members to use and stay connected with the Purdue Hackers organization
+    \item Managed the development, deployment, and maintenance of the main portal for 1500+ members to use and stay connected with the Purdue Hackers organization
 \end{itemize}
 
 \vspace*{2mm}
