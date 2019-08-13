@@ -91,3 +91,5 @@ typings/
 .dynamodb/
 
 public/
+*.xdv
+*.synctex.gz
