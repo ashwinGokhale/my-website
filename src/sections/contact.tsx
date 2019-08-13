@@ -74,7 +74,7 @@ const Contact = ({ offset }: { offset: number }) => (
         </Divider>
         <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
             <Inner>
-                <Styled.h2>Contact Me</Styled.h2>
+                <Styled.h2>Contact me</Styled.h2>
                 <Styled.a
                     as={OutboundLink}
                     href="https://github.com/ashwinGokhale"
