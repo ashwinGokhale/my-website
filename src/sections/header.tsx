@@ -53,7 +53,7 @@ const Header = ({ offset }: { offset: number }) => (
         <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
             <Inner>
                 <Styled.h1>Hi, I'm Ashwin Gokhale.</Styled.h1>
-                <Styled.p>I'm a Senior at Purdue University studying Computer Science</Styled.p>
+                <Styled.p>I'm a Software engineer at Microsoft on the incident management team</Styled.p>
             </Inner>
         </Content>
     </div>

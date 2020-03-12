@@ -1,5 +1,5 @@
 /**
- * @type {import('eslint').}
+ * @type {import('eslint')}
  */
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
