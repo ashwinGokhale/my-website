@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Footer as ThemeFooter, useColorMode, jsx } from 'theme-ui';
+import { Styled, useColorMode, jsx } from 'theme-ui';
 
 const Footer = () => {
     const [colorMode, setColorMode] = useColorMode();
@@ -9,7 +9,16 @@ const Footer = () => {
     };
 
     return (
-        <ThemeFooter>
+        <footer
+            style={{
+                textAlign: `center`,
+                display: `block`,
+                position: `absolute`,
+                bottom: 0,
+                color: `textMuted`,
+                paddingBottom: 15
+            }}
+        >
             <button
                 sx={{
                     variant: `buttons.toggle`,
@@ -26,7 +35,7 @@ const Footer = () => {
             </button>
             Copyright &copy; {new Date().getFullYear()}. All rights reserved.
             <br />
-        </ThemeFooter>
+        </footer>
     );
 };
 
